@@ -11,6 +11,10 @@
         var $numRegistros;
         function BasedeDatos($servidor, $user, $pwd, $bd){
             $this->connect($servidor, $user, $pwd, $bd);
+            if($this->error > '')
+                echo $this->error;
+            else
+                echo 'Me conecte a la base de datos';
         }
         function consulta($query){
             $this->bloque = $this->query($query);
@@ -20,11 +24,12 @@
         function cerrarConexion(){
             $this->close();
         }
-        function obtieneRegistroO(){ //Objeto
-            return $this->bloque->fetch_object($value);
+        function RegistroObjeto(){ //Objeto
+            return $this->bloque->fetch_object();
         }
-        function obtieneRegistroA(){ //Arreglo
-            return $this->bloque->fetch_array($value);
+        function RegistroArreglo(){ //Arreglo
+            return $this->bloque->fetch_array();
         }
     }
+
 ?>
