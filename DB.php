@@ -13,8 +13,6 @@
             $this->connect($servidor, $user, $pwd, $bd);
             if($this->error > '')
                 echo $this->error;
-            else
-                echo 'Me conecte a la base de datos';
         }
         function consulta($query){
             $this->bloque = $this->query($query);
@@ -28,8 +26,9 @@
             return $this->bloque->fetch_object();
         }
         function RegistroArreglo(){ //Arreglo
-            return $this->bloque->fetch_array();
+            return $this->bloque->fetch_array(MYSQLI_BOTH);
         }
     }
 
 ?>
+
