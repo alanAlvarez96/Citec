@@ -6,18 +6,15 @@ include "DB.php";
  * Date: 15/09/18
  * Time: 20:01
  */
-    $dia_actual="";
-    $dia_ant="";
+    if($_GET["peticion"]===1){
     $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
     $query="select * from conferencia order by fecha,hora";
     $arregloGeneral=new ArrayObject();
-    $actividades=new ArrayObject();
     $conexion->consulta($query);
     $control_registros=$conexion->numRegistros;
-    $dias=0;
-    $act=0;
     for($r=0;$r<$control_registros;$r++) {
         $datos=$conexion->RegistroArreglo();
+        //var_dump($datos);
         if($dia_actual===""){
             $dia_actual=$datos['fecha'];
             $dia_ant=$datos['fecha'];
@@ -39,7 +36,8 @@ include "DB.php";
             }
         }
     }
-    echo json_encode($arregloGeneral);
+        echo json_encode($arregloGeneral);
+    }
     /*//echo $control_registros;
     //$dia_ant=0;
     $columnas=$conexion->bloque->field_count;

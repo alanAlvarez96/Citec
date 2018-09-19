@@ -26,7 +26,7 @@
             return $this->bloque->fetch_object();
         }
         function RegistroArreglo(){ //Arreglo
-            return $this->bloque->fetch_array(MYSQLI_BOTH);
+            return $this->bloque->fetch_array(MYSQLI_ASSOC);
         }
     }
 
