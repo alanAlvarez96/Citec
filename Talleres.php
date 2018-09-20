@@ -1,11 +1,11 @@
 <?php
-include "DB.php";
 /**
  * Created by PhpStorm.
  * User: alan
- * Date: 15/09/18
- * Time: 20:01
+ * Date: 19/09/18
+ * Time: 23:31
  */
+    include 'DB.php';
     $consulta=$_SESSION['consulta'];
     $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
     $arregloGeneral=new ArrayObject();
@@ -17,5 +17,4 @@ include "DB.php";
     }
     $conexion->cerrarConexion();
     echo json_encode($arregloGeneral);
-
 ?>

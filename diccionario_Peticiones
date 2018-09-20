@@ -1,0 +1,8 @@
+Aqui te dejo todo lo que tiene que ver con las peticiones
+el listado de que tienes que mandar y que es lo que te va a regresar
+Petciones por GET
+La variable siempre se va a llamar peticion y se le envia un numero dependiendo de lo que se pida
+numero                                  respuesta
+1                                       json conferencias
+2                                       json conferencistas
+3                                       json talleres

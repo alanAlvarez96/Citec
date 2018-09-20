@@ -12,6 +12,15 @@
             header('Location:Conferencias.php');
         }
         break;
-
+        case 2:{
+            $_SESSION['consulta']='Select * from conferencista';
+            header('Location:Conferencistas.php');
+        }
+        break;
+        case 3:{
+            $_SESSION['consulta']='Select * from taller order by fecha,hora';
+            header('Location:Talleres.php');
+        }
+        break;
     }
 ?>
