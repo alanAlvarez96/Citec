@@ -8,8 +8,11 @@
 $correo='15030093@itcelaya.edu.mx';
 $pass='mafg1212';
 $wsdl='http://tigger.itc.mx/ws/soapserver_conacad.php/login?wsdl';
-$cliente=new nusoap_client($wsdl,'wsdl');
+//echo "hola";
+$cliente=new nusoap_client($wsdl);
+echo "hola";
 $parametro=array('em'=>$correo,'ps'=>$pass);
 $resultado=$cliente->call('login',$parametro);
+echo "hola";
 var_dump($resultado);
 ?>

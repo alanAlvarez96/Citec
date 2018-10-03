@@ -14,6 +14,10 @@ numero                                  respuesta
  3.- error3----------significa que el usuario ya inscribio ese taller
  4.- success--------- se pudo inscribir en el taller (o al menos llego hasta el final del proceso)
 -----COSAS ṔOR AVERIGUAR-----
-1.- Listado de actividades donde esta(mind contest etc)
-2.-visitas industriales y social es uno mismo ?? ademas latitud y longitud para maps
+1.-quien ingresa los conferencistas?
+2.-
 3.-
+-----resoluciones 3 de octubre------
+las configuraciones de taller vienen desde una tabla sin embargo hay que seguir validando a nivel de codigo
+se debe instalar libreria soap auncuq posiblemente tengamos acceso al servicio que ya lo hace
+el maestro crea el trigger para mantener un control sobre los cupos
