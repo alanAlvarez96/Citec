@@ -7,6 +7,7 @@ include "DB.php";
  * Time: 20:01
  */
     $consulta=$_SESSION['consulta'];
+    var_dump($consulta);
     $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
     $arregloGeneral=new ArrayObject();
     $conexion->consulta($consulta);
