@@ -41,6 +41,8 @@
             if($cupo>0){
                 if($this->revisaLimiTaller($id_reg)){
                     if($this->revisaInscripcion($id_reg,$idtaller)){
+                        $query="update taller set cupo=cupo-1 ";
+                        $this->consulta($query);
                         $query="insert into asiste_taller(id_user,id_taller) value ('$id_reg','$idtaller')";
                         $this->consulta($query);
                         return "success";
@@ -80,6 +82,23 @@
                 return false;
             else
                 return true;
+        }
+        function inscribirConf($id_user,$id_conf){
+            $cupo=$this->revisaCupoConf($id_conf);
+            if($cupo!==0){
+
+            }
+        }
+        function revisaCupoConf($id_conf){
+            $query="select cupo from conferencia where id_conferencia=$id_conf";
+            $this->consulta($query);
+            $datos=$this->RegistroArreglo();
+            $cupo=$datos['cupo'];
+            return $cupo;
+        }
+        function revisaInscConf($iduser,$idconf){
+            $query="select * from asiste_confer where ";//aun no implementado
+            
         }
     }
 

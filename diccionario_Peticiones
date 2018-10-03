@@ -7,6 +7,12 @@ numero                                  respuesta
 2                                       json conferencistas
 3                                       json talleres
 
+
+-----La inscripcion de talleres puede responder con cuatro valores dentro del json------------
+ 1.- error1----------significa que ya no hay cupo
+ 2.- error2----------significa que sobre paso el numero de talleres permitidos
+ 3.- error3----------significa que el usuario ya inscribio ese taller
+ 4.- success--------- se pudo inscribir en el taller (o al menos llego hasta el final del proceso)
 -----COSAS ṔOR AVERIGUAR-----
 1.- Listado de actividades donde esta(mind contest etc)
 2.-visitas industriales y social es uno mismo ?? ademas latitud y longitud para maps
