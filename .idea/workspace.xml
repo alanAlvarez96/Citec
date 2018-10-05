@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a261140-2302-47de-9343-039a6e78a1f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/32d8694a-da63-48a9-a670-c5949c57b934.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/32d8694a-da63-48a9-a670-c5949c57b934.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diccionario_Peticiones" beforeDir="false" afterPath="$PROJECT_DIR$/diccionario_Peticiones" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +23,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="citec" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="citec" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -36,53 +44,140 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conferencias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscribirTaller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diccionario_Peticiones">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DB.php">
+        <entry file="file://$PROJECT_DIR$/EventoSocial.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VisitaIndustrial.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
+            <state relative-caret-position="180">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conferencistas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+        <entry file="uml://DATABASE/32d8694a-da63-48a9-a670-c5949c57b934.SCHEMA:citec">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>32d8694a-da63-48a9-a670-c5949c57b934.SCHEMA:citec</OriginalElement>
+              <nodes>
+                <node x="382.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.prueba</node>
+                <node x="830.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita</node>
+                <node x="280.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.datos_Reconocimientos</node>
+                <node x="1030.0" y="0.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencista</node>
+                <node x="208.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.Mensajes</node>
+                <node x="0.0" y="312.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.paneles</node>
+                <node x="546.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.ficha_deposito</node>
+                <node x="1005.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.pagos_efectivo</node>
+                <node x="234.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller</node>
+                <node x="1019.5" y="634.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer</node>
+                <node x="428.0" y="611.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento</node>
+                <node x="607.8333333333334" y="69.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tipo_user</node>
+                <node x="594.8333333333334" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario</node>
+                <node x="788.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.logos</node>
+                <node x="1216.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.hotel</node>
+                <node x="32.5" y="1115.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.area_expo_articulo</node>
+                <node x="606.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.reconocimiento</node>
+                <node x="382.0" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.evento_social</node>
+                <node x="147.5" y="11.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista</node>
+                <node x="0.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.configuracion</node>
+                <node x="185.0" y="266.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller</node>
+                <node x="857.5" y="300.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.visita_indus</node>
+                <node x="0.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.articulo</node>
+                <node x="1059.5" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia</node>
+                <node x="43.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencista">
+                  <point x="0.0" y="-119.5" />
+                  <point x="0.0" y="108.0" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="39.5" y="-50.5" />
+                  <point x="352.5" y="581.0" />
+                  <point x="643.3333333333334" y="581.0" />
+                  <point x="-48.5" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller">
+                  <point x="-39.5" y="-50.5" />
+                  <point x="0.0" y="142.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista">
+                  <point x="0.0" y="-142.5" />
+                  <point x="0.0" y="96.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia">
+                  <point x="45.5" y="-50.0" />
+                  <point x="0.0" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.paneles">
+                  <point x="-39.5" y="-50.5" />
+                  <point x="0.0" y="96.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="-45.5" y="-50.0" />
+                  <point x="1065.0" y="581.0" />
+                  <point x="772.6666666666667" y="581.0" />
+                  <point x="80.83333333333337" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tipo_user">
+                  <point x="0.0" y="-119.5" />
+                  <point x="0.0" y="39.0" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="39.5" y="-50.5" />
+                  <point x="161.5" y="571.0" />
+                  <point x="611.0" y="571.0" />
+                  <point x="-80.83333333333337" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.evento_social">
+                  <point x="-39.5" y="-73.5" />
+                  <point x="0.0" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.reconocimiento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="0.0" y="-50.5" />
+                  <point x="16.16666666666663" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.visita_indus">
+                  <point x="39.5" y="-50.5" />
+                  <point x="0.0" y="108.0" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="39.5" y="-73.5" />
+                  <point x="546.5" y="591.0" />
+                  <point x="675.6666666666667" y="591.0" />
+                  <point x="-16.16666666666663" y="119.5" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.area_expo_articulo" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.articulo">
+                  <point x="0.0" y="-85.0" />
+                  <point x="0.0" y="131.0" />
+                </edge>
+                <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+                  <point x="-39.5" y="-50.5" />
+                  <point x="869.5" y="591.0" />
+                  <point x="740.3333333333334" y="591.0" />
+                  <point x="48.5" y="119.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-75.0" y="489.0" />
+              <SelectedNodes>
+                <node>32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -109,8 +204,11 @@
         <option value="$PROJECT_DIR$/Conferencias.php" />
         <option value="$PROJECT_DIR$/InscribirTaller.php" />
         <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/diccionario_Peticiones" />
+        <option value="$PROJECT_DIR$/InscribirVisita.php" />
+        <option value="$PROJECT_DIR$/InscribirSocial.php" />
         <option value="$PROJECT_DIR$/DB.php" />
+        <option value="$PROJECT_DIR$/diccionario_Peticiones" />
+        <option value="$PROJECT_DIR$/VisitaIndustrial.php" />
       </list>
     </option>
   </component>
@@ -189,22 +287,22 @@
       <workItem from="1538522796824" duration="7650000" />
       <workItem from="1538574777031" duration="1273000" />
       <workItem from="1538590114386" duration="1202000" />
-      <workItem from="1538593966853" duration="1977000" />
+      <workItem from="1538593966853" duration="2207000" />
+      <workItem from="1538777346444" duration="2246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46255000" />
+    <option name="totallyTimeSpent" value="48731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="718" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68877554" weight="0.25378788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68877554" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.3112245" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -219,7 +317,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.13484849" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1219697" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24772727" />
@@ -270,10 +368,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conferencias.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -284,33 +382,173 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://DATABASE/32d8694a-da63-48a9-a670-c5949c57b934.SCHEMA:citec">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>32d8694a-da63-48a9-a670-c5949c57b934.SCHEMA:citec</OriginalElement>
+          <nodes>
+            <node x="382.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.prueba</node>
+            <node x="830.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita</node>
+            <node x="280.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.datos_Reconocimientos</node>
+            <node x="1030.0" y="0.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencista</node>
+            <node x="208.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.Mensajes</node>
+            <node x="0.0" y="312.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.paneles</node>
+            <node x="546.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.ficha_deposito</node>
+            <node x="1005.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.pagos_efectivo</node>
+            <node x="234.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller</node>
+            <node x="1019.5" y="634.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer</node>
+            <node x="428.0" y="611.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento</node>
+            <node x="607.8333333333334" y="69.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tipo_user</node>
+            <node x="594.8333333333334" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario</node>
+            <node x="788.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.logos</node>
+            <node x="1216.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.hotel</node>
+            <node x="32.5" y="1115.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.area_expo_articulo</node>
+            <node x="606.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.reconocimiento</node>
+            <node x="382.0" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.evento_social</node>
+            <node x="147.5" y="11.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista</node>
+            <node x="0.0" y="1330.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.configuracion</node>
+            <node x="185.0" y="266.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller</node>
+            <node x="857.5" y="300.5">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.visita_indus</node>
+            <node x="0.0" y="803.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.articulo</node>
+            <node x="1059.5" y="289.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia</node>
+            <node x="43.0" y="634.0">32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencista">
+              <point x="0.0" y="-119.5" />
+              <point x="0.0" y="108.0" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="39.5" y="-50.5" />
+              <point x="352.5" y="581.0" />
+              <point x="643.3333333333334" y="581.0" />
+              <point x="-48.5" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller">
+              <point x="-39.5" y="-50.5" />
+              <point x="0.0" y="142.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.taller" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista">
+              <point x="0.0" y="-142.5" />
+              <point x="0.0" y="96.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.conferencia">
+              <point x="45.5" y="-50.0" />
+              <point x="0.0" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.paneles">
+              <point x="-39.5" y="-50.5" />
+              <point x="0.0" y="96.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_confer" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="-45.5" y="-50.0" />
+              <point x="1065.0" y="581.0" />
+              <point x="772.6666666666667" y="581.0" />
+              <point x="80.83333333333337" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tipo_user">
+              <point x="0.0" y="-119.5" />
+              <point x="0.0" y="39.0" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_panel" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="39.5" y="-50.5" />
+              <point x="161.5" y="571.0" />
+              <point x="611.0" y="571.0" />
+              <point x="-80.83333333333337" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.evento_social">
+              <point x="-39.5" y="-73.5" />
+              <point x="0.0" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.reconocimiento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="0.0" y="-50.5" />
+              <point x="16.16666666666663" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.visita_indus">
+              <point x="39.5" y="-50.5" />
+              <point x="0.0" y="108.0" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_evento" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="39.5" y="-73.5" />
+              <point x="546.5" y="591.0" />
+              <point x="675.6666666666667" y="591.0" />
+              <point x="-16.16666666666663" y="119.5" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.area_expo_articulo" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.articulo">
+              <point x="0.0" y="-85.0" />
+              <point x="0.0" y="131.0" />
+            </edge>
+            <edge source="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.asiste_visita" target="32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.usuario">
+              <point x="-39.5" y="-50.5" />
+              <point x="869.5" y="591.0" />
+              <point x="740.3333333333334" y="591.0" />
+              <point x="48.5" y="119.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-75.0" y="489.0" />
+          <SelectedNodes>
+            <node>32d8694a-da63-48a9-a670-c5949c57b934.TABLE:citec.tallerista</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InscribirTaller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscribirVisita.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscribirSocial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diccionario_Peticiones">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
+        <state relative-caret-position="427">
+          <caret line="123" column="37" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VisitaIndustrial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conferencias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventoSocial.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -40,7 +40,7 @@
             $cupo=$this->revisaCupoTaller($idtaller);
             if($cupo>0){
                 if($this->revisaLimiTaller($id_reg)){
-                    if($this->revisaInscripcion($id_reg,$idtaller)){
+                    if($this->revisaInscripcionTaller($id_reg,$idtaller)){
                         $query="update taller set cupo=cupo-1  where id=$idtaller";
                         $this->consulta($query);
                         $query="insert into asiste_taller(id_user,id_taller) value ('$id_reg','$idtaller')";
@@ -78,7 +78,7 @@
             else
                 return false;
         }
-        function revisaInscripcion($iduser,$idTaller){
+        function revisaInscripcionTaller($iduser, $idTaller){
             $query="select * from asiste_taller where id_user=$iduser and id_taller=$idTaller";
             $this->consulta($query);
             $datos=$this->numRegistros;
@@ -93,6 +93,7 @@
                 if($this->revisaInscVisita($id_user)){
                     $query="insert into asiste_visita(id_user,id_visita) value($id_user,$id_visita)";
                     $this->consulta($query);
+                    return "success";
                 }
                 else
                     return "error3";
@@ -117,28 +118,18 @@
             else
                 return true;
         }
-        function inscribirConf($id_user,$id_conf){
-            $cupo=$this->revisaCupoConf($id_conf);
-            if($cupo!==0){
-
-            }
-        }
-        function revisaCupoConf($id_conf){
-            $query="select cupo from conferencia where id_conferencia=$id_conf";
-            $this->consulta($query);
-            $datos=$this->RegistroArreglo();
-            $cupo=$datos['cupo'];
-            return $cupo;
-        }
-        function revisaInscConf($iduser,$idconf){
-            $query="select * from asiste_confer where ";//aun no implementado
-
-        }
-        function inscSocial($id_user,$id_visita){
+        function inscSocial($id_user,$id_visita,$asiento){
             if($this->revisaCupoSocial($id_visita)>0){
-                $query="insert into asiste_evento(id_user, id_evento) value ($id_user,$id_visita)";
-                $this->consulta($query);
+                if($this->revisaInscSocial($id_user,$id_visita)){
+                    $query="insert into asiste_evento(id_user, id_evento,asiento) value ($id_user,$id_visita,$asiento)";
+                    $this->consulta($query);
+                    return "success";
+                }
+                else
+                    return "error3";
             }
+            else
+                return "error1";
         }
         function revisaCupoSocial($id_visita){
             $query="select cupo from evento_social where id=$id_visita";
@@ -146,6 +137,15 @@
             $respuesta=$this->RegistroArreglo();
             $cupo=$respuesta['cupo'];
             return $cupo;
+        }
+        function revisaInscSocial($id_user,$id_visita){
+            $query="select * from asiste_evento where id_user=$id_user and id_evento=$id_visita";
+            $this->consulta($query);
+            $registros=$this->numRegistros;
+            if($registros===0)
+                return true;
+            else
+                return false;
         }
     }
 

@@ -13,8 +13,14 @@ numero                                  respuesta
  2.- error2----------significa que sobre paso el numero de talleres permitidos
  3.- error3----------significa que el usuario ya inscribio ese taller
  4.- success--------- se pudo inscribir en el taller (o al menos llego hasta el final del proceso)
+
+ NOTA esta tabla de errores aplica para todas las peticiones de inscripcion(taller,visita industrial, visita social)
+ -----Para la visita social----------
+ Se pide un numero de asiento y un camion que no estoy seguro de quien asigna y de donde se toman los asientos dispobibles
+ entonces podemos ese parametro o podemos incluirlo dependiendo de lo que nos digan en pruebas
+ esta activado por default
 -----COSAS ṔOR AVERIGUAR-----
-1.-quien ingresa los conferencistas?
+1.-
 2.-
 3.-
 -----resoluciones 3 de octubre------
