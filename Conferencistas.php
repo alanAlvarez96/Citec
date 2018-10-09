@@ -6,7 +6,7 @@
  * Time: 10:09
  */
     include "DB.php";
-    $consulta=$_SESSION['consulta'];
+    $consulta="select * from conferencista";
     $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
     $arregloGeneral=new ArrayObject();
     $conexion->consulta($consulta);
@@ -16,5 +16,7 @@
         $arregloGeneral[$r]=$datos;
     }
     $conexion->cerrarConexion();
+    //var_dump($arregloGeneral);
+    //die();
     echo json_encode($arregloGeneral);
 ?>
