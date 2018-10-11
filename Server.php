@@ -24,17 +24,21 @@
         break;
         case 4:{
             //inscribe taller
-            $user=$_GET['user'];
-            $taller=new TallerWS();
-            $respuesta=$taller->inscribirTaller($user);
+            if(isset($_POST['user'])){
+                $user=$_POST['user'];
+                $taller=new TallerWS();
+                $respuesta=$taller->inscribirTaller($user);
+            }
         }
         break;
         case 5:{
             //inscribir visita industrial
-            $user=$_POST['user'];
-            $id=$_POST['visita'];
-            $visita=new VIndustrialWS();
-            $respuesta=$visita->InscribirVInsdustrial($user,$id);
+            if(isset($_POST['user']) && isset($_POST['visita'])){
+                $user=$_POST['user'];
+                $id=$_POST['visita'];
+                $visita=new VIndustrialWS();
+                $respuesta=$visita->InscribirVInsdustrial($user,$id);
+            }
         }
         break;
         case 6:{
@@ -45,19 +49,22 @@
         break;
         case 7:{
             // inscribir vista social
-            $user=$_POST['user'];
-            $id=$_POST['visita'];
-            $visita=new VIndustrialWS();
-            $respuesta=$visita->InscribirVSocial($user,$id);
-
+            if(isset($_POST['user']) && isset($_POST['visita'])) {
+                $user = $_POST['user'];
+                $id = $_POST['visita'];
+                $visita = new VIndustrialWS();
+                $respuesta = $visita->InscribirVSocial($user, $id);
+            }
         }
         break;
         case 8:{
             //obtiene todas los eventos sociales ordenados
-            $user=$_POST['user'];
-            $id=$_POST['visita'];
-            $visita=new VIndustrialWS();
-            $respuesta=$visita->obtenerVSocial();
+            if(isset($_POST['user']) && isset($_POST['visita'])) {
+                $user = $_POST['user'];
+                $id = $_POST['visita'];
+                $visita = new VIndustrialWS();
+                $respuesta = $visita->obtenerVSocial();
+            }
         }
         break;
     }
