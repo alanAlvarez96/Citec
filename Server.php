@@ -1,26 +1,68 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alan
- * Date: 19/09/18
- * Time: 15:28
- */
+    include 'ConferenciasWS.php';
+    include 'TallerWS.php';
+    include 'VIndustrialWS.php';
     $peticion=$_GET['peticion'];
     switch ($peticion){
         case 1:{
-            $_SESSION['consulta']="Select * from conferencia order by fecha,hora";
-            header('Location:Conferencias.php');
+            //regresa todas las conferencias
+            $conferecias=new ConferenciasWS();
+            $respuesta=$conferecias->getConferencias();
         }
         break;
         case 2:{
-            $_SESSION['consulta']='Select * from conferencista';
-            header('Location:Conferencistas.php');
+            //obtiene a todos los conferencistas
+            $conferecias=new ConferenciasWS();
+            $respuesta=$conferecias->getConferencistas();
         }
         break;
         case 3:{
-            $_SESSION['consulta']='Select * from taller order by fecha,hora';
-            header('Location:Talleres.php');
+            //obtiene todos los talleres ordenados
+            $taller=new TallerWS();
+            $respuesta=$taller->getTalleres();
         }
         break;
+        case 4:{
+            //inscribe taller
+            $user=$_GET['user'];
+            $taller=new TallerWS();
+            $respuesta=$taller->inscribirTaller($user);
+        }
+        break;
+        case 5:{
+            //inscribir visita industrial
+            $user=$_POST['user'];
+            $id=$_POST['visita'];
+            $visita=new VIndustrialWS();
+            $respuesta=$visita->InscribirVInsdustrial($user,$id);
+        }
+        break;
+        case 6:{
+            //obtiene las vistas industriales  ordenadas
+            $visita=new VIndustrialWS();
+            $respuesta=$visita->obtenerVIndustrial();
+        }
+        break;
+        case 7:{
+            // inscribir vista social
+            $user=$_POST['user'];
+            $id=$_POST['visita'];
+            $visita=new VIndustrialWS();
+            $respuesta=$visita->InscribirVSocial($user,$id);
+
+        }
+        break;
+        case 8:{
+            //obtiene todas los eventos sociales ordenados
+            $user=$_POST['user'];
+            $id=$_POST['visita'];
+            $visita=new VIndustrialWS();
+            $respuesta=$visita->obtenerVSocial();
+        }
+        break;
+    }
+
+    if($respuesta!=null){
+        echo json_encode($respuesta);
     }
 ?>
