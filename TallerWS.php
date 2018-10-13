@@ -1,8 +1,7 @@
 <?php
-    include 'DB.php';
+    //include 'DB.php';
     class TallerWS{
         var $conexion;
-
         public function getTalleres(){
             $this->conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
             $query="Select * from taller order by fecha,hora";
@@ -15,7 +14,6 @@
 
             return $arregloGeneral;
         }
-
         public function inscribirTaller($user){
             $this->conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
             $res=new ArrayObject();
@@ -29,4 +27,3 @@
         }
 
     }
-?>

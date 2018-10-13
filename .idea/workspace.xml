@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a261140-2302-47de-9343-039a6e78a1f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConferenciasWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/ConferenciasWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/Server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TallerWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/TallerWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIndustrialWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/VIndustrialWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diccionario_Peticiones" beforeDir="false" afterPath="$PROJECT_DIR$/diccionario_Peticiones" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,53 +47,87 @@
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Server.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="550">
-                    <caret line="74" column="2" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+  <component name="FUSProjectUsageTrigger">
+    <session id="138075466">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="225" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="225" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="diccionario_Peticiones" value="1" />
+          <entry key="md" value="1" />
+          <entry key="php" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Citec" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VIndustrialWS.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="151" column="31" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscribirSocial.php">
+        <entry file="file://$PROJECT_DIR$/EventoSocial.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="70" />
+              <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diccionario_Peticiones">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="14" selection-end-column="35" />
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -97,6 +138,7 @@
     <findStrings>
       <find>taller</find>
       <find>control_registros</find>
+      <find>entre</find>
     </findStrings>
     <replaceStrings>
       <replace>registros</replace>
@@ -115,8 +157,6 @@
         <option value="$PROJECT_DIR$/InscribirTaller.php" />
         <option value="$PROJECT_DIR$/InscribirVisita.php" />
         <option value="$PROJECT_DIR$/InscribirSocial.php" />
-        <option value="$PROJECT_DIR$/DB.php" />
-        <option value="$PROJECT_DIR$/diccionario_Peticiones" />
         <option value="$PROJECT_DIR$/VisitaIndustrial.php" />
         <option value="$PROJECT_DIR$/EventoSocial.php" />
         <option value="$PROJECT_DIR$/login.php" />
@@ -124,21 +164,30 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql" />
         <option value="$PROJECT_DIR$/TalleresDetalle.php" />
         <option value="$PROJECT_DIR$/Conferencias.php" />
-        <option value="$PROJECT_DIR$/TallerWS.php" />
-        <option value="$PROJECT_DIR$/ConferenciasWS.php" />
         <option value="$PROJECT_DIR$/VIndustrialWS.php" />
+        <option value="$PROJECT_DIR$/ConferenciasWS.php" />
+        <option value="$PROJECT_DIR$/TallerWS.php" />
+        <option value="$PROJECT_DIR$/diccionario_Peticiones" />
         <option value="$PROJECT_DIR$/Server.php" />
+        <option value="$PROJECT_DIR$/DB.php" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP7.1">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
-      <path value="/usr/share/php" />
+      <path value="/usr/lib/php" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
+    <option name="x" value="1280" />
+    <option name="width" value="1366" />
     <option name="height" value="718" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -149,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,13 +209,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/usr/bin/php7.1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -221,12 +270,13 @@
       <workItem from="1539203040752" duration="1626000" />
       <workItem from="1539224314359" duration="4189000" />
       <workItem from="1539259855060" duration="643000" />
-      <workItem from="1539268372967" duration="3800000" />
+      <workItem from="1539268372967" duration="5351000" />
+      <workItem from="1539459945392" duration="3136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71426000" />
+    <option name="totallyTimeSpent" value="76113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -238,10 +288,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="718" extended-state="6" />
+    <frame x="1280" y="0" width="1366" height="718" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68877554" weight="0.32967034" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68877554" weight="0.3348485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.3112245" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,19 +302,19 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.12878788" side_tool="true" weight="1.0" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="12" sideWeight="0.8712121" weight="0.32820514" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32820514" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.12954545" side_tool="true" weight="0.32764506" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" sideWeight="0.87045455" weight="0.32820514" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="3" weight="0.10909091" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68877554" visible="true" weight="0.27878788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68877554" visible="true" weight="0.32954547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.3112245" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,29 +327,25 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32820514" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.12878788" side_tool="true" weight="1.0" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="12" sideWeight="0.8712121" weight="0.32820514" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.27348486" />
+      <window_info anchor="right" id="Database" order="3" weight="0.10909091" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file:///var/www/html/Conferencias.php" />
     <entry file="file:///var/www/html/DB.php" />
-    <entry file="file://$PROJECT_DIR$/diccionario_Peticiones">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/32d8694a-da63-48a9-a670-c5949c57b934.SCHEMA:citec">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -431,27 +477,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql" />
     <entry file="file://$PROJECT_DIR$/TalleresDetalle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventoSocial.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="123" column="37" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -466,9 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#84#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -486,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscribirSocial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscribirVisita.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -500,31 +520,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TallerWS.php">
+    <entry file="file://$PROJECT_DIR$/InscribirSocial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VIndustrialWS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TallerWS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diccionario_Peticiones">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="74" column="2" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventoSocial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="151" column="31" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
         </state>
       </provider>
     </entry>

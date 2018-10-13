@@ -29,14 +29,17 @@
             return $this->bloque->fetch_array(MYSQLI_ASSOC);
         }
         function obtenerUsuario($correo){
+            $this->connect('localhost','alanC','lpmj1212','citec');
             $query="Select id_reg from usuario where correo='$correo' ";
             $this->consulta($query);
             $respuesta=$this->RegistroArreglo();
             $id_reg=$respuesta['id_reg'];
+            $this->close();
             return $id_reg;
         }
 
         function asisitirTaller($id_reg,$idtaller){
+            $this->connect('localhost','alanC','lpmj1212','citec');
             $cupo=$this->revisaCupoTaller($idtaller);
             if($cupo>0){
                 if($this->revisaLimiTaller($id_reg)){
@@ -45,16 +48,23 @@
                         $this->consulta($query);
                         $query="insert into asiste_taller(id_user,id_taller) value ('$id_reg','$idtaller')";
                         $this->consulta($query);
+                        $this->close();
                         return "success";
                     }
-                    else
+                    else{
+                        $this->close();
                         return "error3";//Taller ya inscrito
+                    }
                 }
-                else
+                else{
+                    $this->close();
                     return "error2";//Mas talleres de los que puede inscribir
+                    }
             }
-            else
+            else{
+                $this->close();
                 return "error1";//sin cupo
+                }
 
         }
 
@@ -88,18 +98,24 @@
                 return true;
         }
         function inscribirVisita($id_user,$id_visita){
+            $this->connect('localhost','alanC','lpmj1212','citec');
             $cupo=$this->revisaCupoVisita($id_visita);
             if($cupo>0){
                 if($this->revisaInscVisita($id_user)){
                     $query="insert into asiste_visita(id_user,id_visita) value($id_user,$id_visita)";
                     $this->consulta($query);
+                    $this->close();
                     return "success";
                 }
-                else
+                else{
+                    $this->close();
                     return "error3";
+                }
             }
-            else
+            else{
+                $this->close();
                 return "error1";
+            }
         }
         function revisaCupoVisita($id_visita){
             $query="select cupo from visita_indus where id=$id_visita";
@@ -119,17 +135,23 @@
                 return true;
         }
         function inscSocial($id_user,$id_visita,$asiento){
+            $this->connect('localhost','alanC','lpmj1212','citec');
             if($this->revisaCupoSocial($id_visita)>0){
                 if($this->revisaInscSocial($id_user,$id_visita)){
                     $query="insert into asiste_evento(id_user, id_evento,asiento) value ($id_user,$id_visita,$asiento)";
                     $this->consulta($query);
+                    $this->close();
                     return "success";
                 }
-                else
+                else {
+                    $this->close();
                     return "error3";
+                }
             }
-            else
+            else{
+                $this->close();
                 return "error1";
+            }
         }
         function revisaCupoSocial($id_visita){
             $query="select cupo from evento_social where id=$id_visita";

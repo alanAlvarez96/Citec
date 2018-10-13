@@ -1,13 +1,22 @@
 <?php
+
+    include 'DB.php';
+    echo "bd";
     include 'ConferenciasWS.php';
+    echo "c";
     include 'TallerWS.php';
+    echo "t";
     include 'VIndustrialWS.php';
-    $peticion=$_GET['peticion'];
+    echo"I";
+$peticion=$_GET['peticion'];
     switch ($peticion){
         case 1:{
             //regresa todas las conferencias
+            echo "entre";
             $conferecias=new ConferenciasWS();
+            echo "antes de entrar";
             $respuesta=$conferecias->getConferencias();
+            echo "conferencias 1";
         }
         break;
         case 2:{
@@ -68,8 +77,5 @@
         }
         break;
     }
-
-    if($respuesta!=null){
         echo json_encode($respuesta);
-    }
 ?>

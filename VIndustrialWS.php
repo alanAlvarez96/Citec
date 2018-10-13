@@ -1,5 +1,5 @@
 <?php
-    include 'DB.php';
+    //include 'DB.php';
     class VIndustrialWS{
         public function InscribirVInsdustrial($user,$idvisita){
             $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');

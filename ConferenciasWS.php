@@ -1,5 +1,5 @@
 <?php
-    include 'DB.php';
+    //include 'DB.php';
     class ConferenciasWS{
         public function getConferencias(){
             $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
