@@ -11,7 +11,6 @@
                 $datos=$this->conexion->RegistroArreglo();
                 $arregloGeneral[$r]=$datos;
             }
-
             return $arregloGeneral;
         }
         public function inscribirTaller($user){

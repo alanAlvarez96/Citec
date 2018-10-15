@@ -1,22 +1,16 @@
 <?php
 
     include 'DB.php';
-    echo "bd";
     include 'ConferenciasWS.php';
-    echo "c";
     include 'TallerWS.php';
-    echo "t";
     include 'VIndustrialWS.php';
-    echo"I";
-$peticion=$_GET['peticion'];
+    header('Content-Type: application/json');
+    $peticion=$_GET['peticion'];
     switch ($peticion){
         case 1:{
             //regresa todas las conferencias
-            echo "entre";
             $conferecias=new ConferenciasWS();
-            echo "antes de entrar";
             $respuesta=$conferecias->getConferencias();
-            echo "conferencias 1";
         }
         break;
         case 2:{

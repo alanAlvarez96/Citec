@@ -1,30 +1,29 @@
 <?php
     //include 'DB.php';
     class ConferenciasWS{
+        var $conexion;
         public function getConferencias(){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
+            $this->conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
             $query="Select * from conferencia order by fecha,hora";
-            $arregloGeneral=new ArrayObject();
-            $conexion->consulta($query);
-            $control_registros=$conexion->numRegistros;
+            $this->conexion->consulta($query);
+            $control_registros=$this->conexion->numRegistros;
             for($r=0;$r<$control_registros;$r++) {
-                $datos=$conexion->RegistroArreglo();
+                $datos=$this->conexion->RegistroArreglo();
                 $arregloGeneral[$r]=$datos;
             }
-            $conexion->cerrarConexion();
+            $this->conexion->cerrarConexion();
             return $arregloGeneral;
         }
         public function getConferencistas(){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
+            $this->conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
             $query="select * from conferencista";
-            $arregloGeneral=new ArrayObject();
-            $conexion->consulta($query);
-            $control_registros=$conexion->numRegistros;
+            $this->conexion->consulta($query);
+            $control_registros=$this->conexion->numRegistros;
             for($r=0;$r<$control_registros;$r++) {
-                $datos=$conexion->RegistroArreglo();
+                $datos=$this->conexion->RegistroArreglo();
                 $arregloGeneral[$r]=$datos;
             }
-            $conexion->cerrarConexion();
+            $this->conexion->cerrarConexion();
             return $arregloGeneral;
         }
     }
