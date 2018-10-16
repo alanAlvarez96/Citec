@@ -2,8 +2,7 @@
     //include 'DB.php';
     class VIndustrialWS{
         public function InscribirVInsdustrial($user,$idvisita){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
-            $res=new ArrayObject();
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$conexion->obtenerUsuario($user);
             if($id_reg!=="" && $idvisita!==""){
                 $respuesta=$conexion->inscribirVisita($id_reg,$idvisita);
@@ -13,8 +12,7 @@
         }
 
         public function obtenerVIndustrial(){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
-            $res=new ArrayObject();
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $query="select * from visita_indus order by fecha,hora";
             $conexion->consulta($query);
             $control_registros=$conexion->numRegistros;
@@ -27,8 +25,7 @@
         }
 
         public function obtenerVSocial(){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
-            $res=new ArrayObject();
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $query="select * from evento_social order by fecha,hora";
             $conexion->consulta($query);
             $control_registros=$conexion->numRegistros;
@@ -41,9 +38,8 @@
         }
 
         public function InscribirVSocial($user,$idvisita){
-            $conexion=new BasedeDatos('localhost','alanC','lpmj1212','citec');
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$conexion->obtenerUsuario($user);
-            $res=new ArrayObject();
             if($id_reg!=="" && $idvisita!==""){
                 $idvisita=$_GET['visita'];
                 $respuesta=$conexion->inscribirVisita($id_reg,$idvisita);
