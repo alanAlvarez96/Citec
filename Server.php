@@ -41,6 +41,7 @@
         break;
         case 5:{
             //inscribir visita industrial
+
             if(isset($_POST['user']) && isset($_POST['visita'])){
                 $user=$_POST['user'];
                 $id=$_POST['visita'];
