@@ -81,6 +81,39 @@
             }
         }
         break;
+        case 9:
+            //login
+            if(isset($_POST['mail']) && isset($_POST['pwd'])){
+                $mail=$_POST['mail'];
+                $pwd=$_POST['pwd'];
+                $usuario=new UsuariosWS();
+                $respuesta=$usuario->login($mail,$pwd);
+            }
+            break;
+        case 10:
+            //listas de talleres
+            if(isset($_POST['idTaller'])){
+                $idTaller=$_POST['idTaller'];
+                $taller=new TallerWS();
+                $respuesta=$taller->ListaTaller($idTaller);
+            }
+            break;
+        case 11:
+            //lista de visitas industriales
+            if(isset($_POST['idvisita'])){
+                $idVisita=$_POST['idvisita'];
+                $visita=new VIndustrialWS();
+                $respuesta=$visita->ListaVI($idVisita);
+            }
+            break;
+        case 12:
+            //lista de eventos sociales
+            if(isset($_POST['idEvento'])){
+                $idEvento=$_POST['idEvento'];
+                $visita=new VIndustrialWS();
+                $respuesta=$visita->ListaES($idEvento);
+            }
+            break;
     }
         echo json_encode($respuesta);
 ?>
