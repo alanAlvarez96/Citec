@@ -23,5 +23,13 @@
             }
            return $res;
         }
+        public function ListaTaller($idtaller){
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $query="Select id_user from asiste_taller where id_visita=$idtaller";
+            $conexion->consulta($query);
+            $res=$conexion->RegistroArreglo();
+            $conexion->close();
+            return $res;
+        }
 
     }

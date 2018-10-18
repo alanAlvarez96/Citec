@@ -45,8 +45,27 @@
                 $respuesta=$conexion->inscribirVisita($id_reg,$idvisita);
                 $res['estado']=$respuesta;
             }
+            $conexion->close();
             return $res;
         }
+
+        public function ListaVI($idvisita){
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $query="Select id_user from asiste_visita where id_visita=$idvisita";
+            $conexion->consulta($query);
+            $res=$conexion->RegistroArreglo();
+            $conexion->close();
+            return $res;
+        }
+        public function ListaES($idevento){
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $query="Select id_user from asiste_evento where id_visita=$idevento";
+            $conexion->consulta($query);
+            $res=$conexion->RegistroArreglo();
+            $conexion->close();
+            return $res;
+        }
+
         
     }
 ?>

@@ -6,7 +6,6 @@
  * Time: 7:13
  */
 // archivo para conectarme a la base de datos
-    session_start();
 	class BasedeDatos extends mysqli{
         var $bloque;
         var $numRegistros;
@@ -170,6 +169,7 @@
             else
                 return false;
         }
+
     }
 
 ?>

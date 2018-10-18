@@ -27,3 +27,9 @@ numero                                  respuesta
 las configuraciones de taller vienen desde una tabla sin embargo hay que seguir validando a nivel de codigo
 se debe instalar libreria soap auncuq posiblemente tengamos acceso al servicio que ya lo hace
 el maestro crea el trigger para mantener un control sobre los cupos
+
+Por hacer:
+1.- login ----done
+2.- mandar el conferencista(nombre) por cada conferencia----done
+3.- asistentes por evento-----done
+4.- registro de participantes

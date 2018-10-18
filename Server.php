@@ -1,14 +1,19 @@
 <?php
     session_start();
+    $datos = file("configuracion.php");
+    echo "datos";
+    for($i = 1; $i<count($datos)-1; $i++) {
+        $datoSesion = explode("#", $datos[$i]);
+        //var_dump($datoSesion);
+        $_SESSION[$datoSesion[0]] = trim($datoSesion[1]);
+    }
+    //var_dump($_SESSION);
+    //die();
     include 'DB.php';
     include 'ConferenciasWS.php';
     include 'TallerWS.php';
     include 'VIndustrialWS.php';
-    $datos = file("Configuracion.php");
-    for($i = 1; $i<count($datos)-1; $i++) {
-        $datoSesion = explode(" ", $datos[$i]);
-        $_SESSION[$datoSesion[0]] = trim($datoSesion[1]);
-    }
+
     header('Content-Type: application/json');
     $peticion=$_GET['peticion'];
     switch ($peticion){
