@@ -114,6 +114,15 @@
                 $respuesta=$visita->ListaES($idEvento);
             }
             break;
+        case 13:
+            if(isset($_POST['mail']) && isset($_POST['nombre']) && isset($_POST['apellido'])){
+                $mail=$_POST['mail'];
+                $nombre=$_POST['nombre'];
+                $apellido=$_POST['apellido'];
+                $user=new UsuariosWS();
+                $respuesta=$user->registro($mail,$nombre,$apellido);
+            }
+            break;
     }
         echo json_encode($respuesta);
 ?>
