@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4c9d3d8-a091-42fa-9e23-90f58a979f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/Server.php" afterDir="false" />
-    </list>
+    <list default="true" id="b4c9d3d8-a091-42fa-9e23-90f58a979f31" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +81,15 @@
         <counts>
           <entry key="cell" value="53" />
           <entry key="diccionario_Peticiones" value="216" />
-          <entry key="php" value="1657" />
+          <entry key="php" value="1669" />
           <entry key="sql" value="159" />
-          <entry key="txt" value="90" />
+          <entry key="txt" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1637" />
-          <entry key="PLAIN_TEXT" value="306" />
+          <entry key="PHP" value="1649" />
+          <entry key="PLAIN_TEXT" value="314" />
           <entry key="SQL" value="20" />
           <entry key="Scratch" value="212" />
         </counts>
@@ -119,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="127" column="2" lean-forward="true" selection-start-line="127" selection-start-column="2" selection-end-line="127" selection-end-column="2" />
+            <state relative-caret-position="427">
+              <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -137,7 +134,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UsuariosWS.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -282,7 +279,7 @@
       <workItem from="1539820471176" duration="30000" />
       <workItem from="1539831418061" duration="5515000" />
       <workItem from="1539878960590" duration="3956000" />
-      <workItem from="1539954922705" duration="1010000" />
+      <workItem from="1539954922705" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="archivo de configuracion prueba">
       <created>1539648908845</created>
@@ -312,11 +309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539880652831</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="registro">
+      <created>1539956061175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539956061175</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27660000" />
+    <option name="totallyTimeSpent" value="27909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="718" extended-state="6" />
@@ -355,7 +359,8 @@
     <MESSAGE value="archivo de configuracion prueba" />
     <MESSAGE value="login,listas,conferencistas" />
     <MESSAGE value="listas y login" />
-    <option name="LAST_COMMIT_MESSAGE" value="listas y login" />
+    <MESSAGE value="registro" />
+    <option name="LAST_COMMIT_MESSAGE" value="registro" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql">
@@ -474,17 +479,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UsuariosWS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="127" column="2" lean-forward="true" selection-start-line="127" selection-start-column="2" selection-end-line="127" selection-end-column="2" />
         </state>
       </provider>
     </entry>
