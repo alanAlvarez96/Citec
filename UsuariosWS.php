@@ -42,5 +42,15 @@
             $this->conexion->close();
             return $eventos;
         }
+        public function TipoyPago($mail){
+            $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $id_reg=$this->conexion->obtenerUsuario($mail);
+            $query="select estatus,id_tipo
+                    from usuario
+                    where id_reg=$id_reg";
+            $this->conexion->consulta($query);
+            $res=$this->conexion->RegistroArreglo();
+            return $res;
+        }
     }
 ?>

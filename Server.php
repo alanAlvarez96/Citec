@@ -131,6 +131,13 @@
                 $respuesta=$user->ActividadesInscritas($mail);
             }
             break;
+        case 15:
+            if(isset($_POST['mail'])){
+                $mail=$_POST['mail'];
+                $user=new UsuariosWS();
+                $respuesta=$user->TipoyPago($mail);
+            }
+            break;
     }
         echo json_encode($respuesta);
 ?>
