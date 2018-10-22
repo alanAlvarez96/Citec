@@ -13,6 +13,7 @@
     include 'ConferenciasWS.php';
     include 'TallerWS.php';
     include 'VIndustrialWS.php';
+    include 'UsuariosWS.php';
 
     header('Content-Type: application/json');
     $peticion=$_GET['peticion'];
@@ -121,6 +122,13 @@
                 $apellido=$_POST['apellido'];
                 $user=new UsuariosWS();
                 $respuesta=$user->registro($mail,$nombre,$apellido);
+            }
+            break;
+        case 14:
+            if(isset($_POST['mail'])){
+                $mail=$_POST['mail'];
+                $user=new UsuariosWS();
+                $respuesta=$user->ActividadesInscritas($mail);
             }
             break;
     }
