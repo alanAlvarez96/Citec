@@ -63,6 +63,7 @@
             $conexion->consulta($query);
             $res=$conexion->RegistroArreglo();
             $conexion->close();
+
             return $res;
         }
 
