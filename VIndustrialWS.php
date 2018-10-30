@@ -4,8 +4,9 @@
         public function InscribirVInsdustrial($user,$idvisita){
             $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$conexion->obtenerUsuario($user);
+            $id=(int)$id_reg;
             if($id_reg!=="" && $idvisita!==""){
-                $respuesta=$conexion->inscribirVisita($id_reg,$idvisita);
+                $respuesta=$conexion->inscribirVisita($id,$idvisita);
                 $res['estado']=$respuesta;
             }
             return $res;
@@ -40,9 +41,10 @@
         public function InscribirVSocial($user,$idvisita){
             $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$conexion->obtenerUsuario($user);
+            $id=(int)$id_reg;
             if($id_reg!=="" && $idvisita!==""){
                 $idvisita=$_GET['visita'];
-                $respuesta=$conexion->inscribirVisita($id_reg,$idvisita);
+                $respuesta=$conexion->inscribirVisita($id,$idvisita);
                 $res['estado']=$respuesta;
             }
             $conexion->close();
@@ -63,10 +65,31 @@
             $conexion->consulta($query);
             $res=$conexion->RegistroArreglo();
             $conexion->close();
-
             return $res;
         }
 
-        
+        public function getAsientos($idEvento){
+            $query="select asiento,camion from asiste_evento order by camion,asiento";
+            $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $conexion->consulta($query);
+            $registros=$conexion->numRegistros;
+
+            for ($r=0;$r<$registros;$r++){
+                $res=$conexion->RegistroArreglo();
+                $asientoO[]=(int)$res["asiento"];
+            }
+
+            for ($i=1;$i<=40;$i++){
+                if(!in_array($i,$asientoO))
+                    $asientosD[]=$i;
+            }
+            var_dump($asientoO);
+            var_dump($asientosD);
+            die();
+            $conexion->close();
+            var_dump($asientosD);
+        }
+
+
     }
 ?>

@@ -138,6 +138,10 @@
                 $respuesta=$user->TipoyPago($mail);
             }
             break;
+        case 16:
+            $visita=new VIndustrialWS();
+            $visita->getAsientos(1);
+            break;
     }
         echo json_encode($respuesta);
 ?>

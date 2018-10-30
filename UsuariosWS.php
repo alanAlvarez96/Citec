@@ -18,17 +18,20 @@
         public function ActividadesInscritas($mail){
             $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$this->conexion->obtenerUsuario($mail);
+            $user=(int)$id_reg;
+            $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+
             $queryTaller="select t.nombre,t.fecha,t.hora,t.lugar,t.Requisitos
                           from asiste_taller at inner join taller t on at.id_taller = t.id
-                          where at.id_user=$id_reg";
+                          where at.id_user=$user";
 
             $queryVi="select v.empresa,v.hora,v.fecha,v.hora
                       from asiste_visita vi inner join visita_indus v on vi.id_visita = v.id
-                      where id_user= $id_reg";
+                      where id_user= $user";
 
             $queryEs="select social.evento,social.lugar,social.hora,social.fecha,social.observaciones
                       from asiste_evento es inner join evento_social social on es.id_evento = social.id
-                      where id_user=$id_reg";
+                      where id_user=$user";
 
             $this->conexion->consulta($queryTaller);
             $eventos[0]=$this->conexion->RegistroArreglo();
@@ -40,16 +43,24 @@
             $eventos[2]=$this->conexion->RegistroArreglo();
 
             $this->conexion->close();
+            echo "eventos";
+            var_dump($eventos);
+            die();
             return $eventos;
         }
         public function TipoyPago($mail){
             $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$this->conexion->obtenerUsuario($mail);
+            $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
+            $user=(int)$id_reg;
             $query="select estatus,id_tipo
                     from usuario
-                    where id_reg=$id_reg";
+                    where id_reg=$user";
             $this->conexion->consulta($query);
             $res=$this->conexion->RegistroArreglo();
+            echo "respuesta";
+            var_dump($res);
+            die();
             return $res;
         }
     }

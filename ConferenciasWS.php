@@ -8,7 +8,7 @@
             //var_dump($_SESSION);
             //die();
             $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
-            $query="select c.id_conferencia,c.nombre,c.descripcion,c.lugar_conf,c.fecha,c.hora,con.nombre as nombreC,con.apellidos as apellidoC
+            $query="select c.id_conferencia,c.nombre,c.descripcion,c.lugar_conf,c.fecha,c.hora,con.nombre as nombreC,con.apellidos as apellidoC,con.biografia
                     from conferencia c inner join conferencista con on c.id_conferencista = con.id_conferencista
                     order by fecha,hora";
             $this->conexion->consulta($query);

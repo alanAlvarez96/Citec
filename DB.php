@@ -16,7 +16,8 @@
         }
         function consulta($query){
             $this->bloque = $this->query($query);
-            // echo $query;
+            if($this->error!=="")
+                echo $this->error;
             $this->numRegistros = $this->bloque->num_rows;
         }
         function cerrarConexion(){

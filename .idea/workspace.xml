@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b4c9d3d8-a091-42fa-9e23-90f58a979f31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConferenciasWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/ConferenciasWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/Server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsuariosWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/UsuariosWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIndustrialWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/VIndustrialWS.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,16 +47,42 @@
         <item name="citec" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="citec: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="conferencista: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="citec" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="citec: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="usuario: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="480">
+                    <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="138075466">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -61,11 +90,13 @@
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.37" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,7 +106,7 @@
           <entry key="asiste_taller" value="1" />
           <entry key="asiste_visita" value="1" />
           <entry key="diccionario_Peticiones" value="3" />
-          <entry key="php" value="28" />
+          <entry key="php" value="33" />
           <entry key="sql" value="3" />
           <entry key="tipo_user" value="1" />
           <entry key="usuario" value="2" />
@@ -85,7 +116,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="9" />
-          <entry key="PHP" value="28" />
+          <entry key="PHP" value="33" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -94,16 +125,16 @@
         <counts>
           <entry key="cell" value="53" />
           <entry key="diccionario_Peticiones" value="216" />
-          <entry key="php" value="2243" />
+          <entry key="php" value="2873" />
           <entry key="sql" value="301" />
-          <entry key="txt" value="134" />
+          <entry key="txt" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2155" />
-          <entry key="PLAIN_TEXT" value="350" />
-          <entry key="SQL" value="88" />
+          <entry key="PHP" value="2768" />
+          <entry key="PLAIN_TEXT" value="358" />
+          <entry key="SQL" value="105" />
           <entry key="Scratch" value="354" />
         </counts>
       </usages-collector>
@@ -114,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsuariosWS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            <state relative-caret-position="525">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -129,11 +160,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="138" column="13" lean-forward="true" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="454">
+              <caret line="146" column="2" lean-forward="true" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VIndustrialWS.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -141,13 +181,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2490">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="-107">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>obtener</find>
+      <find>obte</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,16 +203,16 @@
       <list>
         <option value="$PROJECT_DIR$/configuracion.php" />
         <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/DB.php" />
-        <option value="$PROJECT_DIR$/VIndustrialWS.php" />
         <option value="$PROJECT_DIR$/TallerWS.php" />
         <option value="$PROJECT_DIR$/diccionario_Peticiones" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console_1.sql" />
-        <option value="$PROJECT_DIR$/ConferenciasWS.php" />
         <option value="/var/www/html/Citec/login.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql" />
+        <option value="$PROJECT_DIR$/ConferenciasWS.php" />
+        <option value="$PROJECT_DIR$/DB.php" />
         <option value="$PROJECT_DIR$/UsuariosWS.php" />
         <option value="$PROJECT_DIR$/Server.php" />
+        <option value="$PROJECT_DIR$/VIndustrialWS.php" />
       </list>
     </option>
   </component>
@@ -182,6 +228,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1280" />
     <option name="width" value="1366" />
     <option name="height" value="718" />
   </component>
@@ -193,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +252,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +295,10 @@
       <workItem from="1539878960590" duration="3956000" />
       <workItem from="1539954922705" duration="1952000" />
       <workItem from="1540173948401" duration="3027000" />
-      <workItem from="1540226109135" duration="734000" />
+      <workItem from="1540226109135" duration="3844000" />
+      <workItem from="1540240646868" duration="828000" />
+      <workItem from="1540298352534" duration="225000" />
+      <workItem from="1540834475247" duration="10522000" />
     </task>
     <task id="LOCAL-00001" summary="archivo de configuracion prueba">
       <created>1539648908845</created>
@@ -299,11 +349,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540176118102</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="completo">
+      <created>1540226857605</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540226857605</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completo">
+      <created>1540228354342</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540228354342</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32363000" />
+    <option name="totallyTimeSpent" value="47048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,10 +379,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="718" extended-state="6" />
+    <frame x="1280" y="0" width="1366" height="718" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17348485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18181819" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,11 +398,11 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3794872" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.32991454" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.4991453" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" visible="true" weight="0.34188035" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" visible="true" weight="0.08717949" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.21363637" />
+      <window_info anchor="right" id="Database" order="3" weight="0.2128788" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17121212" />
@@ -387,7 +451,8 @@
     <MESSAGE value="listas y login" />
     <MESSAGE value="lista eventos de un usuario" />
     <MESSAGE value="listas nuevas" />
-    <option name="LAST_COMMIT_MESSAGE" value="listas nuevas" />
+    <MESSAGE value="completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="completo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Conferencias.php" />
@@ -464,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VIndustrialWS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TallerWS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -485,20 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32d8694a-da63-48a9-a670-c5949c57b934/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -506,17 +550,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UsuariosWS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="525">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="138" column="13" lean-forward="true" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="454">
+          <caret line="146" column="2" lean-forward="true" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConferenciasWS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIndustrialWS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
