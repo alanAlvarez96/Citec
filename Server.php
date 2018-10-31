@@ -3,11 +3,8 @@
     $datos = file("configuracion.php");
     for($i = 1; $i<count($datos)-1; $i++) {
         $datoSesion = explode("#", $datos[$i]);
-        //var_dump($datoSesion);
         $_SESSION[$datoSesion[0]] = trim($datoSesion[1]);
     }
-    //var_dump($_SESSION);
-    //die();
     include 'DB.php';
     include 'ConferenciasWS.php';
     include 'TallerWS.php';
@@ -40,7 +37,7 @@
             if(isset($_POST['user']) && isset($_POST['taller'])){
                 $user=$_POST['user'];
                 $idTaller=$_POST["taller"];
-                var_dump($_POST["taller"]);
+
                 $taller=new TallerWS();
                 $respuesta=$taller->inscribirTaller($user,$idTaller);
             }

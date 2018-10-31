@@ -1,12 +1,8 @@
 <?php
-    //include 'DB.php';
-    //var_dump($_SESSION);
+
     class ConferenciasWS{
         var $conexion;
         public function getConferencias(){
-            //echo "estas son las sesiones";
-            //var_dump($_SESSION);
-            //die();
             $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $query="select c.id_conferencia,c.nombre,c.descripcion,c.lugar_conf,c.fecha,c.hora,con.nombre as nombreC,con.apellidos as apellidoC,con.biografia
                     from conferencia c inner join conferencista con on c.id_conferencista = con.id_conferencista
