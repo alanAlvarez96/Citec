@@ -140,7 +140,8 @@
             break;
         case 16:
             $visita=new VIndustrialWS();
-            $respuesta=$visita->getAsientos(1);
+            $idEvento=$_POST['idEvento'];
+            $respuesta=$visita->getAsientos($idEvento);
             break;
     }
         echo json_encode($respuesta);
