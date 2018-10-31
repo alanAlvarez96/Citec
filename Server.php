@@ -13,7 +13,7 @@
     include 'TallerWS.php';
     include 'VIndustrialWS.php';
     include 'UsuariosWS.php';
-
+    $respuesta="";
     header('Content-Type: application/json');
     $peticion=$_GET['peticion'];
     switch ($peticion){
