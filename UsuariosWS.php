@@ -34,18 +34,22 @@
                       where id_user=$user";
 
             $this->conexion->consulta($queryTaller);
-            $eventos[0]=$this->conexion->RegistroArreglo();
+            $registros=$this->conexion->numRegistros;
+            for ($r=0;$r<$registros;$r++){
+                $respuesta[]=$this->conexion->RegistroArreglo();
+            }
+            $eventos[0]=$respuesta;
+            $respuesta=null;
 
-            $this->conexion->consulta($queryVi);
-            $eventos[1]=$this->conexion->RegistroArreglo();
 
             $this->conexion->consulta($queryEs);
-            $eventos[2]=$this->conexion->RegistroArreglo();
+            $registros=$this->conexion->numRegistros;
+            for ($r=0;$r<$registros;$r++){
+                $respuesta[]=$this->conexion->RegistroArreglo();
+            }
+            $eventos[1]=$respuesta;
 
             $this->conexion->close();
-            echo "eventos";
-            var_dump($eventos);
-            die();
             return $eventos;
         }
         public function TipoyPago($mail){
@@ -58,9 +62,6 @@
                     where id_reg=$user";
             $this->conexion->consulta($query);
             $res=$this->conexion->RegistroArreglo();
-            echo "respuesta";
-            var_dump($res);
-            die();
             return $res;
         }
     }

@@ -47,7 +47,7 @@
                     if($this->revisaInscripcionTaller($id_reg,$idtaller)){
                         $query="update taller set cupo=cupo-1  where id=$idtaller";
                         $this->consulta($query);
-                        $query="insert into asiste_taller(id_user,id_taller) value ('$id_reg','$idtaller')";
+                        $query="insert into asiste_taller(id_user,id_taller) value ($id_reg,$idtaller)";
                         $this->consulta($query);
                         $this->close();
                         return "success";
@@ -103,7 +103,7 @@
             $cupo=$this->revisaCupoVisita($id_visita);
             if($cupo>0){
                 if($this->revisaInscVisita($id_user)){
-                    $query="insert into asiste_visita(id_user,id_visita) value($id_user,$id_visita)";
+                    $query="insert into asiste_visita(id_user,id_visita,) value($id_user,$id_visita)";
                     $this->consulta($query);
                     $this->close();
                     return "success";
@@ -135,11 +135,11 @@
             else
                 return true;
         }
-        function inscSocial($id_user,$id_visita,$asiento){
+        function inscSocial($id_user,$id_visita,$asiento,$camion){
             $this->connect($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             if($this->revisaCupoSocial($id_visita)>0){
                 if($this->revisaInscSocial($id_user,$id_visita)){
-                    $query="insert into asiste_evento(id_user, id_evento,asiento) value ($id_user,$id_visita,$asiento)";
+                    $query="insert into asiste_evento(id_user, id_evento,asiento,camion) value ($id_user,$id_visita,$asiento,$camion)";
                     $this->consulta($query);
                     $this->close();
                     return "success";

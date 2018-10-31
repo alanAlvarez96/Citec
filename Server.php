@@ -1,7 +1,6 @@
 <?php
     session_start();
     $datos = file("configuracion.php");
-    echo "datos";
     for($i = 1; $i<count($datos)-1; $i++) {
         $datoSesion = explode("#", $datos[$i]);
         //var_dump($datoSesion);
@@ -38,11 +37,15 @@
         break;
         case 4:{
             //inscribe taller
-            if(isset($_POST['user'])){
+            if(isset($_POST['user']) && isset($_POST['taller'])){
                 $user=$_POST['user'];
+                $idTaller=$_POST["taller"];
+                var_dump($_POST["taller"]);
                 $taller=new TallerWS();
-                $respuesta=$taller->inscribirTaller($user);
+                $respuesta=$taller->inscribirTaller($user,$idTaller);
             }
+            else
+                echo "no llego el taller";
         }
         break;
         case 5:{
@@ -65,21 +68,21 @@
         case 7:{
             // inscribir vista social
             if(isset($_POST['user']) && isset($_POST['visita'])) {
-                $user = $_POST['user'];
-                $id = $_POST['visita'];
+                $user =$_POST['user'];
+                $id =(int) $_POST['visita'];
+                $asiento=(int)$_POST['asiento'];
+                $camion=(int)$_POST['camion'];
                 $visita = new VIndustrialWS();
-                $respuesta = $visita->InscribirVSocial($user, $id);
+                $respuesta = $visita->InscribirVSocial($user, $id,$asiento,$camion);
             }
         }
         break;
         case 8:{
             //obtiene todas los eventos sociales ordenados
-            if(isset($_POST['user']) && isset($_POST['visita'])) {
-                $user = $_POST['user'];
-                $id = $_POST['visita'];
+
                 $visita = new VIndustrialWS();
                 $respuesta = $visita->obtenerVSocial();
-            }
+
         }
         break;
         case 9:
@@ -125,11 +128,11 @@
             }
             break;
         case 14:
-            if(isset($_POST['mail'])){
+            //if(isset($_POST['mail'])){
                 $mail=$_POST['mail'];
                 $user=new UsuariosWS();
                 $respuesta=$user->ActividadesInscritas($mail);
-            }
+            //}
             break;
         case 15:
             if(isset($_POST['mail'])){
@@ -140,7 +143,7 @@
             break;
         case 16:
             $visita=new VIndustrialWS();
-            $visita->getAsientos(1);
+            $respuesta=$visita->getAsientos(1);
             break;
     }
         echo json_encode($respuesta);

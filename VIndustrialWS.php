@@ -38,13 +38,12 @@
             return $arregloGeneral;
         }
 
-        public function InscribirVSocial($user,$idvisita){
+        public function InscribirVSocial($user,$idvisita,$asiento,$camion){
             $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $id_reg=$conexion->obtenerUsuario($user);
             $id=(int)$id_reg;
-            if($id_reg!=="" && $idvisita!==""){
-                $idvisita=$_GET['visita'];
-                $respuesta=$conexion->inscribirVisita($id,$idvisita);
+            if($id_reg!==""){
+                $respuesta=$conexion->inscSocial($id,$idvisita,$asiento,$camion);
                 $res['estado']=$respuesta;
             }
             $conexion->close();
@@ -61,11 +60,15 @@
         }
         public function ListaES($idevento){
             $conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
-            $query="Select id_user from asiste_evento where id_visita=$idevento";
+            $query="Select id_user from asiste_evento where id_evento=$idevento";
             $conexion->consulta($query);
-            $res=$conexion->RegistroArreglo();
+            $registros=$conexion->numRegistros;
+            for($r=0;$r<$registros;$r++){
+                $res=$conexion->RegistroArreglo();
+                $respuesta[]=$res;
+            }
             $conexion->close();
-            return $res;
+            return $respuesta;
         }
 
         public function getAsientos($idEvento){
@@ -76,20 +79,34 @@
 
             for ($r=0;$r<$registros;$r++){
                 $res=$conexion->RegistroArreglo();
-                $asientoO[]=(int)$res["asiento"];
+                $camion=(int)$res["camion"];
+                if($camion===1)
+                    $asientoO[]=(int)$res["asiento"];
+                if($camion===2)
+                    $asientoO2[]=(int)$res["asiento"];
             }
-
-            for ($i=1;$i<=40;$i++){
-                if(!in_array($i,$asientoO))
-                    $asientosD[]=$i;
+            $res=null;
+            for ($i=1;$i<=45;$i++){
+                if(!is_null($asientoO) && !is_null($asientoO2)){
+                    if(!in_array($i,$asientoO))
+                        $asientosD[]=$i;
+                    if (!in_array($i,$asientoO2))
+                        $asientosD2[]=$i;
+                }
+                else
+                    if(!in_array($i,$asientoO))
+                        $asientosD[]=$i;
             }
-            var_dump($asientoO);
-            var_dump($asientosD);
-            die();
             $conexion->close();
-            var_dump($asientosD);
-        }
+            if(!is_null($asientosD2)){
+                $res['camion1']=$asientosD;
+                $res['camion2']=$asientosD2;
+            }
+            else
+                $res['camion1']=$asientosD;
 
+          return $res;
+        }
 
     }
 ?>
