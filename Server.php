@@ -92,6 +92,7 @@
                 $pwd=$_POST['pwd'];
                 $usuario=new UsuariosWS();
                 $respuesta=$usuario->login($mail,$pwd);
+                echo $respuesta;
             }
             break;
         case 10:
@@ -125,6 +126,7 @@
                 $apellido=$_POST['apellido'];
                 $user=new UsuariosWS();
                 $respuesta=$user->registro($mail,$nombre,$apellido);
+                echo $respuesta;
             }
             break;
         case 14:
