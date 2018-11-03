@@ -25,11 +25,11 @@
                           from asiste_taller at inner join taller t on at.id_taller = t.id
                           where at.id_user=$user";
 
-            $queryVi="select v.empresa,v.hora,v.fecha,v.hora
+            /*$queryVi="select v.empresa,v.hora,v.fecha,v.hora
                       from asiste_visita vi inner join visita_indus v on vi.id_visita = v.id
-                      where id_user= $user";
+                      where id_user= $user";*/
 
-            $queryEs="select social.evento,social.lugar,social.hora,social.fecha,social.observaciones
+            $queryEs="select social.evento as nombre,social.lugar,social.hora,social.fecha,social.observaciones as Requisitos
                       from asiste_evento es inner join evento_social social on es.id_evento = social.id
                       where id_user=$user";
 
@@ -38,7 +38,7 @@
             for ($r=0;$r<$registros;$r++){
                 $respuesta[]=$this->conexion->RegistroArreglo();
             }
-            $eventos[0]=$respuesta;
+            $eventos['taller']=$respuesta;
             $respuesta=null;
 
 
@@ -47,7 +47,7 @@
             for ($r=0;$r<$registros;$r++){
                 $respuesta[]=$this->conexion->RegistroArreglo();
             }
-            $eventos[1]=$respuesta;
+            $eventos['eventos']=$respuesta;
 
             $this->conexion->close();
             return $eventos;
@@ -57,7 +57,7 @@
             $id_reg=$this->conexion->obtenerUsuario($mail);
             $this->conexion=new BasedeDatos($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $user=(int)$id_reg;
-            $query="select estatus,id_tipo
+            $query="select  id_reg,estatus,id_tipo
                     from usuario
                     where id_reg=$user";
             $this->conexion->consulta($query);

@@ -9,6 +9,7 @@
                     order by fecha,hora";
             $this->conexion->consulta($query);
             $control_registros=$this->conexion->numRegistros;
+            var_dump($control_registros);
             for($r=0;$r<$control_registros;$r++) {
                 $datos=$this->conexion->RegistroArreglo();
                 $arregloGeneral[$r]=$datos;

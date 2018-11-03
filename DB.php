@@ -18,8 +18,13 @@
             $this->bloque = $this->query($query);
             if($this->error!=="")
                 echo $this->error;
-            $this->numRegistros = $this->bloque->num_rows;
+            if(strpos(strtoupper($query), "SELECT") !== false){
+                $this->numRegistros = mysqli_num_rows($this->bloque);
+            }
+            else
+                $this->numeRegistros = $this->bloque->affected_rows;
         }
+
         function cerrarConexion(){
             $this->close();
         }
@@ -42,11 +47,13 @@
         function asisitirTaller($id_reg,$idtaller){
             $this->connect($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
             $cupo=$this->revisaCupoTaller($idtaller);
+            $query="select cupo from taller where id=$idtaller";
+            $this->consulta($query);
+            $res2=$this->RegistroArreglo();
+            $cupo=$cupo-$res2['cupo'];
             if($cupo>0){
                 if($this->revisaLimiTaller($id_reg)){
                     if($this->revisaInscripcionTaller($id_reg,$idtaller)){
-                        $query="update taller set cupo=cupo-1  where id=$idtaller";
-                        $this->consulta($query);
                         $query="insert into asiste_taller(id_user,id_taller) value ($id_reg,$idtaller)";
                         $this->consulta($query);
                         $this->close();
@@ -70,7 +77,7 @@
         }
 
         function revisaCupoTaller($idTaller){
-            $query="Select cupo from taller where id=$idTaller";
+            $query="select count(id_user)  as cupo from asiste_taller where id_taller=$idTaller";
             $this->consulta($query);
             $respuesta=$this->RegistroArreglo();
             $cupo=$respuesta['cupo'];
@@ -137,7 +144,12 @@
         }
         function inscSocial($id_user,$id_visita,$asiento,$camion){
             $this->connect($_SESSION['servidor'], $_SESSION['uDB'], $_SESSION['pDB'], $_SESSION['nDB']);
-            if($this->revisaCupoSocial($id_visita)>0){
+            $query="select cupo from evento_social where id=$id_visita";
+            $this->consulta($query);
+            $res2=$this->RegistroArreglo();
+            $inscritos=$this->revisaCupoSocial($id_visita);
+            $cupo=$res2['cupo']-$inscritos;
+            if($cupo>0){
                 if($this->revisaInscSocial($id_user,$id_visita)){
                     $query="insert into asiste_evento(id_user, id_evento,asiento,camion) value ($id_user,$id_visita,$asiento,$camion)";
                     $this->consulta($query);
@@ -155,7 +167,7 @@
             }
         }
         function revisaCupoSocial($id_visita){
-            $query="select cupo from evento_social where id=$id_visita";
+            $query="select count(id_user) as cupo from asiste_evento where id_evento=$id_visita";
             $this->consulta($query);
             $respuesta=$this->RegistroArreglo();
             $cupo=$respuesta['cupo'];

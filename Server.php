@@ -37,12 +37,10 @@
             if(isset($_POST['user']) && isset($_POST['taller'])){
                 $user=$_POST['user'];
                 $idTaller=$_POST["taller"];
-
                 $taller=new TallerWS();
                 $respuesta=$taller->inscribirTaller($user,$idTaller);
             }
-            else
-                echo "no llego el taller";
+
         }
         break;
         case 5:{
