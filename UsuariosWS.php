@@ -38,7 +38,10 @@
             for ($r=0;$r<$registros;$r++){
                 $respuesta[]=$this->conexion->RegistroArreglo();
             }
-            $eventos['taller']=$respuesta;
+            if(is_null($respuesta))
+                $eventos['taller']=" ";
+            else
+                $eventos['taller']=$respuesta;
             $respuesta=null;
 
 
